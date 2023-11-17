@@ -1,13 +1,9 @@
 pipeline {
   agent any
   stages {
-    stage('Build') {
+    stage('') {
       steps {
-        withGradle() {
-          build 'build'
-        }
-
-        mail(subject: 'builded', body: 'it vuilded', from: 'jenkins', to: 'benjamin.nosetti@gmail.com')
+        echo 'BIP BIUP'
       }
     }
 
